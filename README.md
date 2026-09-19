@@ -53,7 +53,7 @@ Transcript sequences were aligned using multiple sequence alignment.
 
 TP53 transcript variants were aligned to identify conserved nucleotide regions.
 
-![MSA](figures/TP53_MSA_conserved_region.png)
+![MSA](figures/TP53_MSA_visualization.png)
 
 ---
 
@@ -61,7 +61,7 @@ TP53 transcript variants were aligned to identify conserved nucleotide regions.
 
 A conservation profile was generated to identify highly conserved regions across the alignment.
 
-![Conservation](figures/TP53_conservation_profile.png)
+![Conservation](results/TP53_conservation_profile.png)
 
 ---
 
