@@ -1,0 +1,14 @@
+name: TP53_primer
+
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  - python=3.10
+  - biopython
+  - matplotlib
+  - numpy
+  - seqkit
+  - clustalo
+  - primer3
