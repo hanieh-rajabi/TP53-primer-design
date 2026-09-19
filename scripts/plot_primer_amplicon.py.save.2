@@ -1,0 +1,236 @@
+plot as plt
+
+
+# ==========================================
+# 1. Reference transcript
+# ==========================================
+
+transcript = "NM_000546.6"
+transcript_name = "TP53 transcript variant 1"
+
+
+# ==========================================
+# 2. Primer information
+# ==========================================
+
+forward_primer = "TGAAGCTCCCAGAATGCCAG"
+reverse_primer = "AGCTGCCCTGGTAGGTTTTC"
+
+forward_start = 325
+forward_end = 344
+
+reverse_start = 442
+reverse_end = 461
+
+amplicon_start = 325
+amplicon_end = 461
+
+amplicon_length = 137
+
+
+# ==========================================
+# 3. Plot
+# ==========================================
+
+fig, ax = plt.subplots(figsize=(14, 5))
+
+# Transcript line
+ax.plot(
+    [280, 510],
+    [0, 0],
+    linewidth=3
+)
+
+# Forward primer
+ax.plot(
+    [forward_start, forward_end],
+    [0, 0],
+    linewidth=10
+)
+
+# Reverse primer
+ax.plot(
+    [reverse_start, reverse_end],
+    [0, 0],
+    linewidth=10
+)
+
+
+# ==========================================
+# 4. Amplicon bracket
+# ==========================================
+
+bracket_y = -0.45
+
+ax.plot(
+    [amplicon_start, amplicon_end],
+    [bracket_y, bracket_y],
+    linewidth=1.5
+)
+
+ax.plot(
+    [amplicon_start, amplicon_start],
+    [bracket_y - 0.05, bracket_y + 0.05],
+    linewidth=1.5
+)
+
+ax.plot(
+    [amplicon_end, amplicon_end],
+    [bracket_y - 0.05, bracket_y + 0.05],
+    linewidth=1.5
+)
+
+ax.text(
+    (amplicon_start + amplicon_end) / 2,
+    bracket_y - 0.12,
+    f"Expected amplicon: {amplicon_length} bp",
+    ha="center",
+    va="top",
+    fontsize=11
+)
+
+
+# ==========================================
+# 5. Primer labels
+# ==========================================
+
+ax.text(
+    (forward_start + forward_end) / 2,
+    0.22,
+    "Forward primer",
+    ha="center",
+    fontsize=10
+)
+
+ax.text(
+    (forward_start + forward_end) / 2,
+    0.12,
+    f"{forward_primer}",
+    ha="center",
+    fontsize=9
+)
+
+ax.text(
+    (reverse_start + reverse_end) / 2,
+    0.22,
+    "Reverse primer",
+    ha="center",
+    fontsize=10
+)
+
+ax.text(
+    (reverse_start + reverse_end) / 2,
+    0.12,
+    f"{reverse_primer}",
+    ha="center",
+    fontsize=9
+)
+
+
+# ==========================================
+# 6. Position labels
+# ==========================================
+
+ax.text(
+    forward_start,
+    -0.08,
+    "325",
+    ha="center",
+    fontsize=9
+)
+
+ax.text(
+    forward_end,
+    -0.08,
+    "344",
+    ha="center",
+    fontsize=9
+)
+
+ax.text(
+    reverse_start,
+    -0.08,
+    "442",
+    ha="center",
+    fontsize=9
+)
+
+ax.text(
+    reverse_end,
+    -0.08,
+    "461",
+    ha="center",
+    fontsize=9
+)
+
+
+# ==========================================
+# 7. Transcript direction
+# ==========================================
+
+ax.text(
+    280,
+    0.08,
+    "5′",
+    ha="right",
+    fontsize=11
+)
+
+ax.text(
+    510,
+    0.08,
+    "3′",
+    ha="left",
+    fontsize=11
+)
+
+
+# ==========================================
+# 8. Title
+# ==========================================
+
+ax.set_title(
+    "TP53 Primer Pair and Expected Amplicon",
+    fontsize=14
+)
+
+ax.text(
+    395,
+    -0.75,
+    f"{transcript} — {transcript_name}",
+    ha="center",
+    fontsize=10
+)
+
+
+# ==========================================
+# 9. Formatting
+# ==========================================
+
+ax.set_xlim(270, 520)
+ax.set_ylim(-0.9, 0.45)
+
+ax.set_xlabel("Transcript coordinate (nt)")
+
+ax.set_yticks([])
+
+ax.spines["left"].set_visible(False)
+ax.spines["right"].set_visible(False)
+ax.spines["top"].set_visible(False)
+
+plt.tight_layout()
+
+
+# ==========================================
+# 10. Save
+# ==========================================
+
+output_file = "../figures/TP53_primer_amplicon.png"
+
+plt.savefig(
+    output_file,
+    dpi=300,
+    bbox_inches="tight"
+)
+
+

@@ -14,7 +14,6 @@ for record in alignment:
 
     f_match = forward in seq
 
-    # reverse complement
     rev_comp = reverse.translate(
         str.maketrans("ATCG", "TAGC")
     )[::-1]

@@ -39,7 +39,7 @@ for record in alignment:
 
     print("\n", record.id)
 
-    # Forward search
+
     f_start = seq.replace("-", "").find(forward)
 
     if f_start != -1:
@@ -49,7 +49,7 @@ for record in alignment:
         print("Forward primer: not exact")
 
 
-    # Reverse search
+
     r_start = seq.replace("-", "").find(reverse_rc)
 
     if r_start != -1:

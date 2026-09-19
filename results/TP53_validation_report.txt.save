@@ -1,0 +1,31 @@
+TP53primer/
+│
+├── data/
+│   ├── TP53_variants.fasta
+│   └── TP53_consensus_401_700.fasta
+│
+├── alignment/
+│   └── TP53_MSA.fasta
+│
+├── validation/
+│   ├── check_primers.py
+│   ├── mismatch_analysis.py
+│   └── TP53_primer_validation.tsv   <-- این را می‌سازیم
+│
+└── results/
+    └── TP53_validation_report.txt   <-- گزارش نهاییTP53primer/
+│
+├── data/
+│   ├── TP53_variants.fasta
+│   └── TP53_consensus_401_700.fasta
+│
+├── alignment/
+│   └── TP53_MSA.fasta
+│
+├── validation/
+│   ├── check_primers.py
+│   ├── mismatch_analysis.py
+│   └── TP53_primer_validation.tsv   <-- این را می‌سازیم
+│
+└── results/
+    └── TP53_validation_report.txt   <-- گزارش نهایی

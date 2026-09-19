@@ -9,8 +9,8 @@ alignment = AlignIO.read(
 )
 
 
-start = 400   # Python index (401 in alignment)
-end = 700     # Python index (700 in alignment)
+start = 400   # python index (401 in alignment)
+end = 700     # python index (700 in alignment)
 
 
 records = []
@@ -20,7 +20,7 @@ for record in alignment:
 
     region = record.seq[start:end]
 
-    # حذف gap ها
+
     region = region.replace("-", "")
 
     records.append(

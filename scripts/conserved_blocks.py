@@ -13,7 +13,6 @@ window_size = 100
 scores = []
 
 
-# Calculate conservation per position
 
 for i in range(alignment.get_alignment_length()):
 

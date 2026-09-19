@@ -11,7 +11,7 @@ print("Number of sequences:", num_sequences)
 print("Alignment length:", alignment.get_alignment_length())
 
 
-# Calculate conservation for each position
+# calculate conservation for each position
 
 conservation = []
 
@@ -35,7 +35,7 @@ for i in range(alignment.get_alignment_length()):
     conservation.append(score)
 
 
-# Find highly conserved regions
+# find highly conserved regions
 
 threshold = 0.90
 

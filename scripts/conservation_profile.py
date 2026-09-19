@@ -2,7 +2,7 @@ from Bio import AlignIO
 import matplotlib.pyplot as plt
 
 
-# Read alignment
+# read alignment
 alignment = AlignIO.read(
     "../alignment/TP53_MSA.fasta",
     "fasta"
@@ -12,7 +12,7 @@ alignment = AlignIO.read(
 scores = []
 
 
-# Calculate conservation score
+# calculate conservation score
 for i in range(alignment.get_alignment_length()):
 
     column = alignment[:, i]
@@ -34,8 +34,6 @@ for i in range(alignment.get_alignment_length()):
     scores.append(score)
 
 
-
-# Plot
 
 plt.figure(figsize=(12,4))
 

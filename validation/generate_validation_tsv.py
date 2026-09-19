@@ -46,7 +46,6 @@ for record in alignment:
 
     seq = str(record.seq).replace("-", "")
 
-    # پیدا کردن محل primer
     f_pos = seq.find(forward)
     r_pos = seq.find(reverse_rc)
 
@@ -65,7 +64,6 @@ for record in alignment:
         r_mismatch = ["NA"]
 
 
-    # بررسی 5 نوکلئوتید انتهایی (3')
     f_3prime = any(
         x >= len(forward)-4 for x in f_mismatch
     )
