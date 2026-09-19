@@ -1,0 +1,8 @@
+Variant	Forward_match	Reverse_match	Forward_mismatch	Reverse_mismatch	Forward_3prime_mismatch	Reverse_3prime_mismatch
+NM_000546.6	True	True	0	0	False	False
+NM_001276761.3	True	True	0	0	False	False
+NM_001276696.3	True	True	0	0	False	False
+NM_001276695.3	True	True	0	0	False	False
+NM_001126118.2	True	True	0	0	False	False
+NM_001407262.1	True	True	0	0	False	False
+NM_001407269.1	True	True	0	0	False	False
