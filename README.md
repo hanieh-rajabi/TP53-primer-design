@@ -16,7 +16,7 @@ Can a primer pair be designed within a conserved region of TP53 that is shared a
 
 ## Workflow
 
-![Workflow](figures/TP53_workflow.png)
+
 
 The analysis pipeline consisted of:
 
