@@ -20,10 +20,13 @@ Seven human TP53 RefSeq mRNAs from NCBI:
 ## What I did
 
 **1. Alignment.** The transcripts were aligned with Clustal Omega 
-
+<p align="center">
+  <img src="figures/TP53_MSA_visualization.png" width="700">
+</p>
 ![MSA](figures/TP53_MSA_visualization.png)
 
 **2. Conservation.** For each alignment column I calculated the fraction of sequences carrying the most common base (gaps ignored). I then averaged it in 100-column windows to find stretches that are conserved across all seven transcripts.
+
 
 ![Conservation profile](results/TP53_conservation_profile.png)
 
