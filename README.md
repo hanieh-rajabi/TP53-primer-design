@@ -44,7 +44,7 @@ Seven human TP53 RefSeq mRNAs from NCBI:
 - The product is 137 bp in every transcript. In NM_000546.6 it covers positions 325–461 (c.183–c.319 of the coding sequence).
 - Primer-BLAST found single-primer hits in some non-TP53 transcripts, but no off-target product in the expected size range.
 
-![Primer design](figures/TP53_primer_design.png)
+
 ![Validation](figures/TP53_validation_summary.png)
 
 
