@@ -20,9 +20,7 @@ Seven human TP53 RefSeq mRNAs from NCBI:
 ## What I did
 
 **1. Alignment.** The transcripts were aligned with Clustal Omega 
-<p align="center">
-  <img src="figures/TP53_MSA_visualization.png" width="700">
-</p>
+
 ![MSA](figures/TP53_MSA_visualization.png)
 
 **2. Conservation.** For each alignment column I calculated the fraction of sequences carrying the most common base (gaps ignored). I then averaged it in 100-column windows to find stretches that are conserved across all seven transcripts.
@@ -47,8 +45,9 @@ Seven human TP53 RefSeq mRNAs from NCBI:
 - The product is 137 bp in every transcript. In NM_000546.6 it covers positions 325–461 (c.183–c.319 of the coding sequence).
 - Primer-BLAST found single-primer hits in some non-TP53 transcripts, but no off-target product in the expected size range.
 
-
-![Validation](figures/TP53_validation_summary.png)
+<p align="center">
+  <img src="figures/TP53_validation_summary.png" width="800" height="600">
+</p>
 
 
 ## Things to keep in mind
